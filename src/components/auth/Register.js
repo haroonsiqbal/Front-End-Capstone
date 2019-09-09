@@ -1,0 +1,83 @@
+import React, { Component } from "react"
+import UserManager from "../../modules/UserManager"
+
+class Register extends Component {
+
+    // Set initial state
+    state = {
+        username: "",
+        password: "",
+        id: 0
+    }
+
+    // Update state whenever an input field is edited
+    handleFieldChange = (event) => {
+        const stateToChange = {}
+        stateToChange[event.target.id] = event.target.value
+        this.setState(stateToChange)
+    }
+
+    handleRegister = (event) => {
+        event.preventDefault()
+        UserManager.getUsername(this.state.username).then(user => {
+            if (user.length !== 0) {
+                window.alert("This account already exists. Please log in or create a new account.")
+                document.querySelector("#username").value = ""
+                document.querySelector("#password").value = ""
+            } else if (this.state.username.length === 0 || this.state.password.length === 0) {
+                window.alert("Please fill out all fields.")
+            } else {
+            UserManager.post(this.state).then((object) => {
+                sessionStorage.setItem(
+                    "credentials",
+                JSON.stringify({
+                    username: this.state.username,
+                    password: this.state.password,
+                    id: object.id
+                })
+            )
+                this.props.history.push("/");
+            })
+        }
+    })
+    }
+
+    handleCancel = (event) => {
+        event.preventDefault()
+        this.props.history.push("/login");
+    }
+
+    render() {
+        return (
+            <div className="login_container">
+                <form onSubmit={this.handleRegister}>
+                <img src={ require('./javajuice.png') } alt="Jave Juice Logo"/>
+                <fieldset>
+                    <h3>Register</h3>
+                    <div className="formgrid">
+                        <label htmlFor="inputUsername">Username</label>
+                        <input onChange={this.handleFieldChange} type="username"
+                            id="username"
+                            placeholder="Username"
+                            required="" autoFocus="" />
+                        <label htmlFor="inputPassword">Password</label>
+                        <input onChange={this.handleFieldChange} type="password"
+                            id="password"
+                            placeholder="Password"
+                            required="" />
+                    </div>
+                    <button type="submit">
+                        Submit
+                    </button>
+                    <button type="cancel" onClick={this.handleCancel}>
+                        Cancel
+                    </button>
+                </fieldset>
+            </form>
+            </div>
+        )
+    }
+
+}
+
+export default Register

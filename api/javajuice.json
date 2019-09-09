@@ -1,50 +1,47 @@
 {
-    "locations": [
-        {
-          "name": "Frothy Monkey",
-          "address": "235 5th Ave N",
-          "neighborhood": "Downtown",
-          "outlets": 1
-        },
-        {
-          "name": "Steadfast Coffee",
-          "address": "603 Taylor St",
-          "neighborhood": "Germantown",
-          "outlets": 2
-        },
-        {
-          "name": "Ugly Mugs",
-          "address": "1886 Eastland Ave",
-          "neighborhood": "East Nashville",
-          "outlets": 3
-        }
-    ],
-
-    "locationsComments": [
-        {
-          "commentId": 0,
-          "locationId": 0
-        }
-    ],
-
-    "comments": [
-        {
-          "userId": 0,
-          "commentId": 0    
-        }
-    ],
-
-    "users": [
-        {
-          "username": "test",
-          "password": "test"    
-        }
-    ],
-
-    "userLocations": [
-        {
-          "userId": 0,
-          "locationId": 0    
-        }
-    ]
-  }
+  "locations": [
+    {
+      "name": "Frothy Monkey",
+      "address": "235 5th Ave N",
+      "neighborhood": "Downtown",
+      "outlets": 1
+    },
+    {
+      "name": "Steadfast Coffee",
+      "address": "603 Taylor St",
+      "neighborhood": "Germantown",
+      "outlets": 2
+    },
+    {
+      "name": "Ugly Mugs",
+      "address": "1886 Eastland Ave",
+      "neighborhood": "East Nashville",
+      "outlets": 3
+    }
+  ],
+  "locationsComments": [
+    {
+      "commentId": 0,
+      "locationId": 0
+    }
+  ],
+  "comments": [
+    {
+      "userId": 0,
+      "commentId": 0
+    }
+  ],
+  "users": [
+    {
+      "username": "haroon",
+      "password": "h",
+      "id": 1
+    }
+  ],
+  "userLocations": [
+    {
+      "userId": 0,
+      "locationId": 0
+    }
+  ]
+}
