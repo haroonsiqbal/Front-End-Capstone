@@ -1,36 +1,24 @@
 {
   "locations": [
     {
-      "name": "Frothy Monkey",
-      "address": "235 5th Ave N",
-      "neighborhood": "Downtown",
-      "outlets": 1
+      "name": "a",
+      "address": "a",
+      "neighborhood": "a",
+      "outlets": 1,
+      "userId": 3,
+      "id": 2
     },
     {
-      "name": "Steadfast Coffee",
-      "address": "603 Taylor St",
-      "neighborhood": "Germantown",
-      "outlets": 2
-    },
-    {
-      "name": "Ugly Mugs",
-      "address": "1886 Eastland Ave",
-      "neighborhood": "East Nashville",
-      "outlets": 3
+      "name": "b",
+      "address": "b",
+      "neighborhood": "b",
+      "outlets": 2,
+      "userId": 1,
+      "id": 3
     }
   ],
-  "locationsComments": [
-    {
-      "commentId": 0,
-      "locationId": 0
-    }
-  ],
-  "comments": [
-    {
-      "userId": 0,
-      "commentId": 0
-    }
-  ],
+  "locationsComments": [],
+  "comments": [],
   "users": [
     {
       "username": "haroon",
@@ -48,10 +36,5 @@
       "id": 3
     }
   ],
-  "userLocations": [
-    {
-      "userId": 0,
-      "locationId": 0
-    }
-  ]
+  "userLocations": []
 }
