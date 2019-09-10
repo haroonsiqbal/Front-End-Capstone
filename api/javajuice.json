@@ -1,20 +1,20 @@
 {
   "locations": [
     {
-      "name": "a",
-      "address": "a",
-      "neighborhood": "a",
-      "outlets": 1,
+      "name": "c",
+      "address": "c",
+      "neighborhood": "c",
+      "outlets": 2,
       "userId": 3,
-      "id": 2
+      "id": 4
     },
     {
-      "name": "b",
-      "address": "b",
-      "neighborhood": "b",
-      "outlets": 2,
-      "userId": 1,
-      "id": 3
+      "name": "d",
+      "address": "d",
+      "neighborhood": "d",
+      "outlets": 3,
+      "userId": 3,
+      "id": 5
     }
   ],
   "locationsComments": [],
