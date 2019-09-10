@@ -46,7 +46,6 @@ class Login extends Component {
         return (
             <div className="login_container">
             <form onSubmit={this.handleLogin}>
-                <img className="login_img" src={ require('./javajuice.png') } alt="Java Juice Logo"/>
                 <fieldset>
                     <h3>Login</h3>
                     <div className="formgrid">

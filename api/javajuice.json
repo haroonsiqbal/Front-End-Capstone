@@ -36,6 +36,16 @@
       "username": "haroon",
       "password": "h",
       "id": 1
+    },
+    {
+      "username": "steve",
+      "password": "s",
+      "id": 2
+    },
+    {
+      "username": "a",
+      "password": "a",
+      "id": 3
     }
   ],
   "userLocations": [
