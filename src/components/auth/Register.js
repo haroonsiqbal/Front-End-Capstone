@@ -51,7 +51,6 @@ class Register extends Component {
         return (
             <div className="login_container">
                 <form onSubmit={this.handleRegister}>
-                <img src={ require('./javajuice.png') } alt="Jave Juice Logo"/>
                 <fieldset>
                     <h3>Register</h3>
                     <div className="formgrid">

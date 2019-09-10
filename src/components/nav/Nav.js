@@ -11,7 +11,7 @@ class Nav extends Component {
                         <Link className="nav-link" to="/Home">Home</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/Add">Add Location</Link>
+                        <Link className="nav-link" to="/Add">Add</Link>
                     </li>
                     <li className="nav-item">
                         <Link className="nav-link" to="/Search">Search</Link>
@@ -20,7 +20,7 @@ class Nav extends Component {
                         <Link className="nav-link" to="/MyLocations">My Locations</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link" to="/Login">Log Out</Link>
+                        <Link className="nav-link" to="/LogOut">Log Out</Link>
                     </li>
                 </ul>
             </nav>
