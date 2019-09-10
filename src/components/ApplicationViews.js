@@ -6,7 +6,7 @@ import Register from "./auth/Register"
 import Home from "./home/Home"
 import Search from "./search/Search"
 import AddLocation from "./addlocation/AddLocation";
-import LocationList from "./mylocations/LocationList";
+import MyLocations from "./mylocations/MyLocations";
 
 class ApplicationViews extends Component {
     isAuthenticated = () => sessionStorage.getItem("credentials") !== null
@@ -55,7 +55,7 @@ class ApplicationViews extends Component {
           <Route exact path ="/mylocations" render={props => {
               if (this.isAuthenticated()) {
                 return (
-                <LocationList {...props} />
+                <MyLocations {...props} />
                 )
               } 
               return <Redirect to="/landing" />
