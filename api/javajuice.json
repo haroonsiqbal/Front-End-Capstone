@@ -1,14 +1,6 @@
 {
   "locations": [
     {
-      "name": "haroon shop",
-      "address": "h",
-      "neighborhood": "h",
-      "outlets": 5,
-      "userId": 1,
-      "id": 6
-    },
-    {
       "name": "Frothy Monkey",
       "address": "235 5th Ave N",
       "neighborhood": "Downtown",
@@ -17,20 +9,12 @@
       "id": 7
     },
     {
+      "id": 8,
       "name": "cool place",
       "address": "123 Main Street",
       "neighborhood": "Downtown",
-      "outlets": 3,
-      "userId": 1,
-      "id": 8
-    },
-    {
-      "name": "hello",
-      "address": "d",
-      "neighborhood": "Downtown",
-      "outlets": 3,
-      "userId": 1,
-      "id": 9
+      "outlets": "9000",
+      "userId": 1
     }
   ],
   "locationsComments": [],

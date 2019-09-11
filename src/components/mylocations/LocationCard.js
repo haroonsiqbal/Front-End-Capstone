@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import EditModalHelper from './EditModalHelper';
 
 class LocationCard extends Component {
   
@@ -12,8 +13,7 @@ class LocationCard extends Component {
             <p>Address: {this.props.shop.address}</p>
             <p>Neighborhood: {this.props.shop.neighborhood}</p>
             <p>Outlets: {this.props.shop.outlets}</p>
-            <button
-              onClick={() => { this.props.history.push(`/locations/${this.props.shop.id}/edit`) }}>Edit</button>
+            <EditModalHelper {...this.props} />
             <button onClick={() => this.props.deleteLocation(this.props.shop.id)}>Delete</button>
             <button>Comments</button>
           </div>

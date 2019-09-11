@@ -27,6 +27,15 @@ deleteLocation = id => {
       })
     })
   }
+
+getAllLocations = () => {
+  LocationManager.getAll()
+    .then((locations) => {
+        this.setState({
+            locations: locations
+        })
+    })
+}
   
 render(){
     return(
@@ -37,6 +46,7 @@ render(){
             key={shop.id}
             shop={shop}
             deleteLocation={this.deleteLocation}
+            getAllLocations={this.getAllLocations}
             {...this.props}
             />
       )}
