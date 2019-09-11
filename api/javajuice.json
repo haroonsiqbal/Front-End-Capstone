@@ -23,6 +23,14 @@
       "outlets": 3,
       "userId": 1,
       "id": 8
+    },
+    {
+      "name": "hello",
+      "address": "d",
+      "neighborhood": "Downtown",
+      "outlets": 3,
+      "userId": 1,
+      "id": 9
     }
   ],
   "locationsComments": [],

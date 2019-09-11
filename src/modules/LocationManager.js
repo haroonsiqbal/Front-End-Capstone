@@ -11,7 +11,7 @@ export default {
     },
 
     getFiltered(neighborhood, outlets) {
-        return fetch(`${remoteURL}/locations?neighborhood=${neighborhood}&outlets=${outlets}`).then(result => result.json())
+        return fetch(`${remoteURL}/locations?neighborhood=${neighborhood}&outlets>=${outlets}`).then(result => result.json())
     }, 
     
     delete(id) {
