@@ -1,20 +1,28 @@
 {
   "locations": [
     {
-      "name": "c",
-      "address": "c",
-      "neighborhood": "c",
-      "outlets": 2,
-      "userId": 3,
-      "id": 4
+      "name": "haroon shop",
+      "address": "h",
+      "neighborhood": "h",
+      "outlets": 5,
+      "userId": 1,
+      "id": 6
     },
     {
-      "name": "d",
-      "address": "d",
-      "neighborhood": "d",
+      "name": "Frothy Monkey",
+      "address": "235 5th Ave N",
+      "neighborhood": "Downtown",
+      "outlets": 2,
+      "userId": 1,
+      "id": 7
+    },
+    {
+      "name": "cool place",
+      "address": "123 Main Street",
+      "neighborhood": "Downtown",
       "outlets": 3,
-      "userId": 3,
-      "id": 5
+      "userId": 1,
+      "id": 8
     }
   ],
   "locationsComments": [],
@@ -36,5 +44,5 @@
       "id": 3
     }
   ],
-  "userLocations": []
+  "usersLocations": []
 }

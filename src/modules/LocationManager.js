@@ -9,6 +9,10 @@ export default {
     getAll() {
         return fetch(`${remoteURL}/locations`).then(result => result.json())
     },
+
+    getFiltered(neighborhood, outlets) {
+        return fetch(`${remoteURL}/locations?neighborhood=${neighborhood}&outlets=${outlets}`).then(result => result.json())
+    }, 
     
     delete(id) {
         return fetch(`${remoteURL}/locations/${id}`, {
