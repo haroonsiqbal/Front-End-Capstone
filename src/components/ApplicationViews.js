@@ -1,12 +1,13 @@
-import {Route, Redirect} from "react-router-dom";
-import React, { Component } from "react";
+import {Route, Redirect} from "react-router-dom"
+import React, { Component } from "react"
 import Landing from "./landing/Landing"
 import Login from "./auth/Login"
 import Register from "./auth/Register"
 import Home from "./home/Home"
 import Search from "./search/Search"
-import AddLocation from "./addlocation/AddLocation";
-import MyLocations from "./mylocations/MyLocations";
+import AddLocation from "./addlocation/AddLocation"
+import MyLocations from "./mylocations/MyLocations"
+import EditLocation from "./mylocations/deletelater"
 
 class ApplicationViews extends Component {
     isAuthenticated = () => sessionStorage.getItem("credentials") !== null
@@ -70,7 +71,10 @@ class ApplicationViews extends Component {
             }}/>  
           <Route exact path ="/logout" render={props => {
               return <Redirect to="/landing" />
-            }}/>     
+            }}/>
+          <Route path="/locations/:locationId(\d+)/edit" render={props => {
+          return <EditLocation {...props} />
+        }} />     
         
         </React.Fragment>
       );
