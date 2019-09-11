@@ -24,8 +24,7 @@ class SearchForm extends Component {
             const neighborhood = this.state.neighborhood
             const outlets = parseInt(this.state.outlets)
 
-            LocationManager.getFiltered(neighborhood, outlets)
-            .then(() => this.props.history.push("/search"));
+            this.props.getSearchResults(neighborhood, outlets)
         }
     };
 
@@ -49,7 +48,7 @@ class SearchForm extends Component {
                         required
                         onChange={this.handleFieldChange}
                         id="outlets"
-                        placeholder="Outlets"
+                        placeholder="Minimum Outlets"
                         />
                     </div>
                     <div className="alignRight">
