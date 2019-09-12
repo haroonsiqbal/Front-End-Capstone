@@ -13,18 +13,6 @@ handleFieldChange = evt => {
   stateToChange[evt.target.id] = evt.target.value;
   this.setState(stateToChange);
 };
-
-// favLocation = () => {
-//   const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
-
-//   this.setState({ loadingStatus: true });
-//     const userLocation = {
-//         userId: currentUser.id,
-//         locationId: this.props.shop.id
-//     };
-//     console.log(userLocation)
-//   LocationManager.post(userLocation)
-// };
   
 render(){
     return(
@@ -34,7 +22,6 @@ render(){
         <SearchCard
             key={shop.id}
             shop={shop}
-            // favLocation={this.favLocation}
             {...this.props}
             />
       )}
