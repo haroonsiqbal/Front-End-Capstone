@@ -9,12 +9,12 @@ class LocationCard extends Component {
       return (
         <div className="card">
           <div className="card-content">
-            <h2>Name: <span className="card-locationName">{this.props.shop.name}</span></h2>
-            <p>Address: {this.props.shop.address}</p>
-            <p>Neighborhood: {this.props.shop.neighborhood}</p>
-            <p>Outlets: {this.props.shop.outlets}</p>
+            <h2>Name: <span className="card-locationName">{this.props.shop.location.name}</span></h2>
+            <p>Address: {this.props.shop.location.address}</p>
+            <p>Neighborhood: {this.props.shop.location.neighborhood}</p>
+            <p>Outlets: {this.props.shop.location.outlets}</p>
             <EditModalHelper {...this.props} />
-            <button onClick={() => this.props.deleteLocation(this.props.shop.id)}>Delete</button>
+            <button onClick={() => this.props.deleteLocation(this.props.shop.location.id)}>Delete</button>
             <button>Comments</button>
           </div>
         </div>
@@ -23,11 +23,11 @@ class LocationCard extends Component {
       return <>
         <div className="card">
           <div className="card-content">
-            <h2>Name: <span className="card-locationName">{this.props.shop.name}</span></h2>
-            <p>Address: {this.props.shop.address}</p>
-            <p>Neighborhood: {this.props.shop.neighborhood}</p>
-            <p>Outlets: {this.props.shop.outlets}</p> 
-            <button onClick={() => this.props.deleteLocation(this.props.shop.id)}>Delete</button>
+            <h2>Name: <span className="card-locationName">{this.props.shop.location.name}</span></h2>
+            <p>Address: {this.props.shop.location.address}</p>
+            <p>Neighborhood: {this.props.shop.location.neighborhood}</p>
+            <p>Outlets: {this.props.shop.location.outlets}</p> 
+            <button onClick={() => this.props.deleteLocation(this.props.shop.location.id)}>Delete</button>
             <button>Comments</button>
           </div>
         </div></>

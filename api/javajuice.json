@@ -17,12 +17,12 @@
       "userId": 1
     },
     {
-      "id": 9,
       "name": "zz",
       "address": "zz",
       "neighborhood": "zz",
-      "outlets": 3,
-      "userId": 3
+      "outlets": 1,
+      "userId": 3,
+      "id": 9
     }
   ],
   "locationsComments": [],
@@ -57,12 +57,12 @@
     },
     {
       "userId": 3,
-      "locationId": 7,
+      "locationId": 9,
       "id": 3
     },
     {
-      "userId": 3,
-      "locationId": 7,
+      "userId": 1,
+      "locationId": 9,
       "id": 4
     }
   ]
