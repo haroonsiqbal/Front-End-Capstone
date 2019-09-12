@@ -34,7 +34,7 @@ class EditLocationModal extends Component {
         LocationManager.update(editedLocation)
         .then(() => {
           this.props.closeModal()
-          this.props.getAllLocations()
+          this.props.getFiltered()
         })
       }
   
