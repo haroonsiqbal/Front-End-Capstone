@@ -45,6 +45,10 @@ export default {
         return fetch(`${remoteURL}/users/${userId}?_embed=usersLocations`).then(result => result.json())
     },
 
+    getIndividualLocation(id) {
+        return fetch(`${remoteURL}/locations/${id}`).then(result => result.json())
+    },
+
     update(editedLocation) {
         return fetch(`${remoteURL}/locations/${editedLocation.id}`, {
             method: "PUT",
