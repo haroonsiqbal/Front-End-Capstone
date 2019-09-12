@@ -13,24 +13,11 @@ class LocationList extends Component {
 
   getFiltered() {
     const currentUser = JSON.parse(sessionStorage.getItem("credentials"));
-    const userId = currentUser.id;
+    const userId = currentUser.id
     LocationManager.getFavs(userId).then(locations => {
-      console.log(locations);
-      const filtered = locations.usersLocations.map(userLocation => {
-        return userLocation.locationId;
-      });
-      //create empty array of userLocations
-      //run filtered.for each with a fetch call and then append the result of each fetch call to state.
-      //Then set userLocations into state, and then you can use the data in your render.
-      const userLocations = [];
-      filtered.forEach(id => {
-        LocationManager.getIndividualLocation(id).then(locationObject => {
-          userLocations.push(locationObject);
-        });
-        console.log(userLocations);
-      });
+      console.log(locations)
       this.setState({
-        locations: userLocations
+        locations: locations
       });
     });
   }

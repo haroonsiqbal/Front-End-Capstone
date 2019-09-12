@@ -41,8 +41,12 @@ export default {
         }).then(data => data.json())
     },
 
+    // getFavs(userId) {
+    //     return fetch(`${remoteURL}/users/${userId}?_embed=usersLocations`).then(result => result.json())
+    // },
+
     getFavs(userId) {
-        return fetch(`${remoteURL}/users/${userId}?_embed=usersLocations`).then(result => result.json())
+        return fetch(`${remoteURL}/usersLocations?_expand=location&userId=${userId}`).then(result => result.json())
     },
 
     getIndividualLocation(id) {
