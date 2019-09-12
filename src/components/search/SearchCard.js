@@ -2,7 +2,14 @@ import React, { Component } from 'react';
 import LocationManager from '../../modules/LocationManager';
 
 class SearchCard extends Component {
-  
+  state = {
+    text: "Add"
+  }
+
+  changeText = (text) => {
+    this.setState({ text });
+  }
+
   favLocation = () => {
     const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
   
@@ -15,7 +22,13 @@ class SearchCard extends Component {
     LocationManager.fav(userLocation)
   };
 
+  favWrapper = () => {
+    this.changeText("Added")
+    this.favLocation(this.props.shop.id)
+  }
+
   render() {
+      const { text } = this.state
       return (
         <div className="card">
           <div className="card-content">
@@ -24,7 +37,7 @@ class SearchCard extends Component {
             <p>Neighborhood: {this.props.shop.neighborhood}</p>
             <p>Outlets: {this.props.shop.outlets}</p>
             <button>Comments</button>
-            <button onClick={() => this.favLocation(this.props.shop.id)}>Add</button>
+            <button onClick={() => this.favWrapper()}>{text}</button>
           </div>
         </div>
       );
