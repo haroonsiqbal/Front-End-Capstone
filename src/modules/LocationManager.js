@@ -31,6 +31,16 @@ export default {
         }).then(data => data.json())
     },
 
+    fav(newUserLocation) {
+        return fetch(`${remoteURL}/usersLocations`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+            },
+            body: JSON.stringify(newUserLocation)
+        }).then(data => data.json())
+    },
+
     update(editedLocation) {
         return fetch(`${remoteURL}/locations/${editedLocation.id}`, {
             method: "PUT",

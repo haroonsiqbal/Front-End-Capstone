@@ -1,20 +1,28 @@
 {
   "locations": [
     {
+      "id": 7,
       "name": "Frothy Monkey",
       "address": "235 5th Ave N",
       "neighborhood": "Downtown",
-      "outlets": 2,
-      "userId": 1,
-      "id": 7
+      "outlets": "7",
+      "userId": 1
     },
     {
       "id": 8,
       "name": "cool place",
       "address": "123 Main Street",
       "neighborhood": "Downtown",
-      "outlets": "9000",
+      "outlets": "8",
       "userId": 1
+    },
+    {
+      "id": 9,
+      "name": "zz",
+      "address": "zz",
+      "neighborhood": "zz",
+      "outlets": 3,
+      "userId": 3
     }
   ],
   "locationsComments": [],
@@ -36,5 +44,21 @@
       "id": 3
     }
   ],
-  "usersLocations": []
+  "usersLocations": [
+    {
+      "userId": 1,
+      "locationId": 7,
+      "id": 1
+    },
+    {
+      "userId": 1,
+      "locationId": 8,
+      "id": 2
+    },
+    {
+      "userId": 3,
+      "locationId": 7,
+      "id": 3
+    }
+  ]
 }
