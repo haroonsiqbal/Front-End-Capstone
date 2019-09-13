@@ -5,7 +5,7 @@
       "name": "Frothy Monkey",
       "address": "235 5th Ave N",
       "neighborhood": "Downtown",
-      "outlets": "7",
+      "outlets": "8",
       "userId": 1
     },
     {
@@ -88,6 +88,11 @@
       "userId": 3,
       "locationId": 10,
       "id": 5
+    },
+    {
+      "userId": 1,
+      "locationId": 9,
+      "id": 6
     }
   ]
 }
