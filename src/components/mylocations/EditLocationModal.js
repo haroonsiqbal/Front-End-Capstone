@@ -39,7 +39,7 @@ class EditLocationModal extends Component {
       }
   
       componentDidMount() {
-        LocationManager.get(this.props.shop.id)
+        LocationManager.get(this.props.shop.location.id)
         .then(location => {
             this.setState({
               locationName: location.name,

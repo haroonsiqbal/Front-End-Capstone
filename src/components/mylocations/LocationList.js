@@ -11,7 +11,7 @@ class LocationList extends Component {
     this.getFiltered();
   }
 
-  getFiltered() {
+  getFiltered = () => {
     const currentUser = JSON.parse(sessionStorage.getItem("credentials"));
     const userId = currentUser.id
     LocationManager.getFavs(userId).then(locations => {
