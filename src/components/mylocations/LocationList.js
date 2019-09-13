@@ -23,12 +23,8 @@ class LocationList extends Component {
   }
 
   deleteLocation = id => {
-    LocationManager.delete(id).then(() => {
-      LocationManager.getAll().then(newLocations => {
-        this.setState({
-          locations: newLocations
-        });
-      });
+    LocationManager.deleteFav(id).then(() => {
+      this.getFiltered()
     });
   };
 

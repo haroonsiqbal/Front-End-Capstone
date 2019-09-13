@@ -23,6 +23,30 @@
       "outlets": 1,
       "userId": 3,
       "id": 9
+    },
+    {
+      "name": "gg",
+      "address": "gg",
+      "neighborhood": "gg",
+      "outlets": 2,
+      "userId": 3,
+      "id": 10
+    },
+    {
+      "name": "mm",
+      "address": "mm",
+      "neighborhood": "mm",
+      "outlets": 1,
+      "userId": 3,
+      "id": 11
+    },
+    {
+      "name": "ff",
+      "address": "ff",
+      "neighborhood": "ff",
+      "outlets": 1,
+      "userId": 3,
+      "id": 12
     }
   ],
   "locationsComments": [],
@@ -61,9 +85,9 @@
       "id": 3
     },
     {
-      "userId": 1,
-      "locationId": 9,
-      "id": 4
+      "userId": 3,
+      "locationId": 10,
+      "id": 5
     }
   ]
 }

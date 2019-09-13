@@ -20,6 +20,13 @@ export default {
         })
         .then(result => result.json())
     },
+
+    deleteFav(id) {
+        return fetch(`${remoteURL}/usersLocations/${id}`, {
+            method: "DELETE"
+        })
+        .then(result => result.json())
+    },
   
     post(newLocation) {
         return fetch(`${remoteURL}/locations`, {
@@ -40,10 +47,6 @@ export default {
             body: JSON.stringify(newUserLocation)
         }).then(data => data.json())
     },
-
-    // getFavs(userId) {
-    //     return fetch(`${remoteURL}/users/${userId}?_embed=usersLocations`).then(result => result.json())
-    // },
 
     getFavs(userId) {
         return fetch(`${remoteURL}/usersLocations?_expand=location&userId=${userId}`).then(result => result.json())
