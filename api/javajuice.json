@@ -50,7 +50,43 @@
     }
   ],
   "locationsComments": [],
-  "comments": [],
+  "comments": [
+    {
+      "comment": "Hello",
+      "userId": 1,
+      "id": 1
+    },
+    {
+      "comment": "Hello",
+      "userId": 1,
+      "id": 2
+    },
+    {
+      "comment": "hello!",
+      "userId": 1,
+      "id": 3
+    },
+    {
+      "comment": "goodbye",
+      "userId": 1,
+      "id": 4
+    },
+    {
+      "comment": "Hello",
+      "userId": 1,
+      "id": 5
+    },
+    {
+      "comment": "?",
+      "userId": 1,
+      "id": 6
+    },
+    {
+      "comment": "hallo",
+      "userId": 1,
+      "id": 7
+    }
+  ],
   "users": [
     {
       "username": "haroon",
