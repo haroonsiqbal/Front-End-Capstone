@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import CommentManager from "../../modules/CommentManager"
-import CommentCard from "./CommentModalHelper"
+import CommentCard from "./CommentCard"
 
 
 class AddCommentModal extends Component {
@@ -11,8 +11,8 @@ class AddCommentModal extends Component {
     }
 
     updateComments = () => {
-      CommentManager.getAll().then(messages => {
-          this.setState({messages: messages})
+      CommentManager.getAll().then(comments => {
+          this.setState({comments: comments})
       })
   }
 
@@ -30,7 +30,7 @@ class AddCommentModal extends Component {
     constructNewComment = event => {
         const username = (JSON.parse(sessionStorage.getItem("credentials")))
         if (this.state.comment === "") {
-            window.alert("Please input a message");
+            window.alert("Please input a comment");
         } else {
             const comment = {
                 comment: this.state.comment,
@@ -56,7 +56,6 @@ class AddCommentModal extends Component {
                         <CommentCard
                             key={comment.id}
                             comment={comment}
-                            updateComments={this.updateComments}
                             {...this.props}
                         />
                     )}
