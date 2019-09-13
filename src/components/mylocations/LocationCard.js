@@ -14,7 +14,7 @@ class LocationCard extends Component {
             <p>Neighborhood: {this.props.shop.location.neighborhood}</p>
             <p>Outlets: {this.props.shop.location.outlets}</p>
             <EditModalHelper {...this.props} />
-            <button onClick={() => this.props.deleteLocation(this.props.shop.location.id)}>Delete</button>
+            <button onClick={() => this.props.deleteLocation(this.props.shop.id)}>Delete</button>
             <button>Comments</button>
           </div>
         </div>
@@ -27,7 +27,7 @@ class LocationCard extends Component {
             <p>Address: {this.props.shop.location.address}</p>
             <p>Neighborhood: {this.props.shop.location.neighborhood}</p>
             <p>Outlets: {this.props.shop.location.outlets}</p> 
-            <button onClick={() => this.props.deleteLocation(this.props.shop.location.id)}>Delete</button>
+            <button onClick={() => this.props.deleteLocation(this.props.shop.id)}>Delete</button>
             <button>Comments</button>
           </div>
         </div></>

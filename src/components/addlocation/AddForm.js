@@ -32,7 +32,7 @@ class AddForm extends Component {
             };
 
             LocationManager.post(location)
-            .then(() => this.props.history.push("/mylocations"));
+            .then(() => this.props.history.push("/search"));
         }
     };
 
