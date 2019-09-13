@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import EditModalHelper from './EditModalHelper';
+import CommentModalHelper from '../comments/CommentModalHelper'
 
 class LocationCard extends Component {
   
@@ -16,7 +17,7 @@ class LocationCard extends Component {
             <p>Submitted By: {this.props.shop.location.userId}</p>
             <EditModalHelper {...this.props} />
             <button onClick={() => this.props.deleteLocation(this.props.shop.id)}>Delete</button>
-            <button>Comments</button>
+            <CommentModalHelper {...this.props} />
           </div>
         </div>
       );
@@ -30,7 +31,7 @@ class LocationCard extends Component {
             <p>Outlets: {this.props.shop.location.outlets}</p>
             <p>Submitted By: {this.props.shop.location.userId}</p> 
             <button onClick={() => this.props.deleteLocation(this.props.shop.id)}>Delete</button>
-            <button>Comments</button>
+            <CommentModalHelper {...this.props} />
           </div>
         </div></>
     }
