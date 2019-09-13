@@ -7,7 +7,7 @@ class CommentCard extends Component {
     if (this.props.comment.userId === currentUser.id) {
       return (
         <div className="card">
-          <p>comment</p>
+          <p>{this.props.comment.comment}</p>
           <button>edit</button>
           <button>delete</button>
         </div>
@@ -16,7 +16,7 @@ class CommentCard extends Component {
       return <>
         <div className="card">
           <div className="card-content">
-            <p>comment</p>
+            <p>{this.props.comment.comment}</p>
             
           </div>
         </div></>
