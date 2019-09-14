@@ -11,7 +11,9 @@ class AddCommentModal extends Component {
     }
 
     updateComments = () => {
-      CommentManager.getAll().then(comments => {
+      const cardId = this.props.shop.locationId
+      CommentManager.getLocationComments(cardId).then(comments => {
+          console.log(comments)
           this.setState({comments: comments})
       })
   }
@@ -38,13 +40,23 @@ class AddCommentModal extends Component {
             };
 
             CommentManager.post(comment)
-                .then(() => {
-                    console.log("post")
-                    this.updateComments()
+                .then((commentObject) => {
+                    console.log(commentObject)
                     document.querySelector("#comment").value = ""
                     this.setState({comment: ""})
+                    const locationComment = {
+                      locationId: this.props.shop.locationId,
+                      commentId: commentObject.id
+                    }
+                    console.log(locationComment)
+                    CommentManager.postLocationComment(locationComment)
+                    this.updateComments()
                 })
-        }
+
+
+            }
+        
+      
     };
     render() {
         return (
