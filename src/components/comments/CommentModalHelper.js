@@ -1,6 +1,6 @@
 import React, { Component } from "react"
 import ReactModal from 'react-modal'
-import AddCommentModal from "./AddCommentModal";
+import CommentModal from "./CommentModal";
 
 ReactModal.setAppElement('#root')
 class CommentModalHelper extends Component {
@@ -31,7 +31,7 @@ class CommentModalHelper extends Component {
                 onRequestClose={this.closeModal}
                 contentLabel="Comment Modal"
             >
-                <AddCommentModal
+                <CommentModal
                     closeModal={this.closeModal}
                     openModal={this.openModal}
                     updateComments={this.updateComments}
