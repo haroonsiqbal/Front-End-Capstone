@@ -7,6 +7,9 @@ export default {
       getAll() {
         return fetch(`${remoteURL}/comments?_expand=user`).then(result => result.json())
       },
+      getLocationComments(cardId) {
+        return fetch(`${remoteURL}/locationsComments?_expand=comment&locationId=${cardId}`).then(result => result.json())
+      },
       delete(id) {
       return fetch(`${remoteURL}/comments/${id}`, {
             method: "DELETE"
@@ -22,6 +25,15 @@ export default {
                 body: JSON.stringify(newComment)
             }).then(data => data.json())
     },
+    postLocationComment(newComment) {
+        return fetch(`${remoteURL}/locationsComments`, {
+            method: "POST",
+            headers: {
+                "Content-Type": "application/json"
+              },
+              body: JSON.stringify(newComment)
+          }).then(data => data.json())
+  },
     update(editedComment) {
       return fetch(`${remoteURL}/comments/${editedComment.id}`, {
         method: "PUT",
