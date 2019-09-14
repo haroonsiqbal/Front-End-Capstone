@@ -8,8 +8,8 @@ class CommentCard extends Component {
       return (
         <div className="card">
           <p>{this.props.comment.comment.comment}</p>
-          <button>edit</button>
-          <button>delete</button>
+          <button>Edit</button>
+          <button onClick={() => this.props.deleteComment(this.props.comment.comment.id)}>Delete</button>
         </div>
       );
     } else {

@@ -3,7 +3,7 @@ import CommentManager from "../../modules/CommentManager"
 import CommentCard from "./CommentCard"
 
 
-class AddCommentModal extends Component {
+class CommentModal extends Component {
     state = {
       comments: [],
       modalIsOpen: false,  
@@ -28,6 +28,11 @@ class AddCommentModal extends Component {
         this.setState(stateToChange)
     }
 
+    deleteComment = id => {
+        CommentManager.delete(id).then(() => {
+          this.updateComments()
+        });
+      };
 
     constructNewComment = event => {
         const username = (JSON.parse(sessionStorage.getItem("credentials")))
@@ -68,6 +73,7 @@ class AddCommentModal extends Component {
                         <CommentCard
                             key={comment.id}
                             comment={comment}
+                            deleteComment={this.deleteComment}
                             {...this.props}
                         />
                     )}
@@ -88,4 +94,4 @@ class AddCommentModal extends Component {
     }
 }
 
-export default AddCommentModal;
+export default CommentModal;
