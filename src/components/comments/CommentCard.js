@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import EditCommentModalHelper from './EditCommentModalHelper'
 
 class CommentCard extends Component {
   
@@ -8,7 +9,7 @@ class CommentCard extends Component {
       return (
         <div className="card">
           <p>{this.props.comment.comment.comment}</p>
-          <button>Edit</button>
+          <EditCommentModalHelper {...this.props} />
           <button onClick={() => this.props.deleteComment(this.props.comment.comment.id)}>Delete</button>
         </div>
       );
