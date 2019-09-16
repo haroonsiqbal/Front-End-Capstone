@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import UserManager from "../../modules/UserManager"
+import { Button, Form, FormGroup, Label, Input, FormText } from "reactstrap";
+import './Register.css'
 
 class Register extends Component {
 
@@ -49,31 +51,39 @@ class Register extends Component {
 
     render() {
         return (
-            <div className="login_container">
-                <form onSubmit={this.handleRegister}>
-                <fieldset>
-                    <h3>Register</h3>
-                    <div className="formgrid">
-                        <label htmlFor="inputUsername">Username</label>
-                        <input onChange={this.handleFieldChange} type="username"
+        <div className="registration-container">
+                <div className="registration-title-container">    
+                    <h3 className="registration-title">Register</h3>
+                </div>    
+                <div className="registration-forms-container">
+                <Form onSubmit={this.handleRegister}>
+                <FormGroup>
+                        <Input onChange={this.handleFieldChange} type="username"
                             id="username"
                             placeholder="Username"
                             required="" autoFocus="" />
-                        <label htmlFor="inputPassword">Password</label>
-                        <input onChange={this.handleFieldChange} type="password"
+                </FormGroup>
+                <FormGroup>
+                        <Input onChange={this.handleFieldChange} type="password"
                             id="password"
                             placeholder="Password"
                             required="" />
-                    </div>
-                    <button type="submit">
-                        Submit
-                    </button>
-                    <button type="cancel" onClick={this.handleCancel}>
-                        Cancel
-                    </button>
-                </fieldset>
-            </form>
-            </div>
+                </FormGroup>
+                </Form>
+                </div>
+                <div className="registration-buttons-container">
+                <div className="registration-button-container1">
+                    <Button color="danger" type="submit">
+                        SUBMIT
+                    </Button>
+                </div>
+                <div className="registration-button-container2">   
+                    <Button color="danger" type="cancel" onClick={this.handleCancel}>
+                        CANCEL
+                    </Button>
+                </div>
+                </div>
+        </div>
         )
     }
 
