@@ -1,0 +1,52 @@
+body, html {
+    height: 100%;
+
+    /* The image used */
+    background-image: url('../img/beans2.jpg');
+    
+    /* Full height */
+    height: 100vh;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+.login-title {
+    text-align: center;
+    color: #FFC23A;
+    font-size: 3em;
+}
+
+.login-title-container {
+    padding: 5%;
+}
+
+.login-forms-container {
+    margin: auto;
+    max-width: 300px;
+    padding-bottom: 4%;
+}
+
+.login-button-container {
+    text-align: center;
+    padding-top: 1%;
+    padding-bottom: 3%;
+}
+
+.registration-link {
+    text-align: center;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.login-container {
+    margin: auto;
+    transform: translateY(30%);
+    padding: 3%;
+    width: 500px;
+    background-color: #464C43;
+    border: 2px solid #FFC23A;
+}
+
