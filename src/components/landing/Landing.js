@@ -1,4 +1,6 @@
 import React, { Component } from "react"
+import './Landing.css'
+import { Button } from 'reactstrap';
 
 class Landing extends Component {
 
@@ -8,14 +10,18 @@ class Landing extends Component {
 
     render() {
         return (
-            <div className="landing_container">
-                <img className="landing_img" src={ require('./javajuice.png') } alt="Java Juice Logo"/>
+            <React.Fragment>
+            <div className="logo-container">
+                <img className="landing_img" src={ require('../img/javajuice.png') } alt="Java Juice Logo"/>
+            </div>    
+            <div className="landing-button-container">    
                 <form onSubmit={this.handleLoginButton}>
-                    <button type="submit">
-                        Login
-                    </button>
+                    <Button color="danger" type="submit">
+                        LOGIN
+                    </Button>
                 </form>
             </div>
+            </React.Fragment>
         )
     }
 
