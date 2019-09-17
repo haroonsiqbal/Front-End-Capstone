@@ -55,6 +55,22 @@
       "outlets": 1,
       "userId": 1,
       "id": 13
+    },
+    {
+      "name": "ff",
+      "address": "ff",
+      "neighborhood": "Downtown",
+      "outlets": 2,
+      "userId": 1,
+      "id": 14
+    },
+    {
+      "name": "gg",
+      "address": "gg",
+      "neighborhood": "Downtown",
+      "outlets": 5,
+      "userId": 1,
+      "id": 15
     }
   ],
   "locationsComments": [
@@ -263,6 +279,11 @@
       "userId": 1,
       "locationId": 13,
       "id": 7
+    },
+    {
+      "userId": 1,
+      "locationId": 14,
+      "id": 8
     }
   ]
 }

@@ -40,7 +40,7 @@ class CommentModalHelper extends Component {
     
     
         </ReactModal>
-        <button onClick={this.openModal}>Comments</button>
+        <button className="card-button" onClick={this.openModal}>COMMENTS</button>
 
             </>
         )

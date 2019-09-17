@@ -5,5 +5,44 @@
     background-color: #E9ECEF;
     padding: 3%;
     border-radius: 1%;
-    transform: translateY(5%);
+    transform: translateY(10%);
+}
+
+.search-container-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+    
+}
+
+.card {
+    flex-basis: 40%;
+    padding: 4%;
+    margin-top: 5%;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 350px;
+}
+
+
+.card-h2 {
+    color: #B85147
+}
+
+.card-button {
+    background-color: #302E30;
+    color: #FFC23A;
+    border: none;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin: 5px;
+    font-size: .8em;
+}
+
+.card-button:hover {
+    background-color: #FFC23A;
+    color: #302E30;
 }

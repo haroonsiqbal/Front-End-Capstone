@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import SearchCard from './SearchCard'
 import LocationManager from '../../modules/LocationManager';
+import "./Search.css"
 
 class SearchList extends Component {
 state = {
@@ -17,7 +18,7 @@ handleFieldChange = evt => {
 render(){
     return(
     <React.Fragment>
-        <div className="container-cards">
+        <div className="search-container-cards">
       {this.props.locations.map(shop =>
         <SearchCard
             key={shop.id}
