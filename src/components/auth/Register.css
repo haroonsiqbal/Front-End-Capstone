@@ -29,25 +29,6 @@ body, html {
     padding-bottom: 4%;
 }
 
-.registration-buttons-container {
-    display: flex;
-    justify-content: space-evenly;
-    
-    
-}
-
-.registration-button-container1 {
-    text-align: center;
-    padding-top: 1%;
-    padding-bottom: 3%;
-}
-
-.registration-button-container2 {
-    text-align: center;
-    padding-top: 1%;
-    padding-bottom: 3%;
-}
-
 .registration-link {
     text-align: center;
     font-weight: bold;
@@ -63,3 +44,6 @@ body, html {
     border: 2px solid #FFC23A;
 }
 
+.cancelb {
+    transform: translateX(144%);
+}

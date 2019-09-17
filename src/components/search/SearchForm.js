@@ -1,5 +1,8 @@
 import React, { Component } from 'react';
 import LocationManager from '../../modules/LocationManager';
+import { Button, Jumbotron, Form, FormGroup, Label, Input, FormText } from "reactstrap";
+import './Search.css'
+
 
 class SearchForm extends Component {
     state = {
@@ -29,37 +32,35 @@ class SearchForm extends Component {
     };
 
     render(){
-
         return(
-            <React.Fragment>
+        <div className="search-form-container">
             <h2>Search</h2>
-            <form>
-                <fieldset>
-                    <div className="formgrid">
-                       <input
+            <Form>
+                <FormGroup>
+                       <Input
                         type="text"
                         required
                         onChange={this.handleFieldChange}
                         id="neighborhood"
                         placeholder="Neighborhood"
                         />
-                        <input
+                </FormGroup>
+                <FormGroup>      
+                        <Input
                         type="text"
                         required
                         onChange={this.handleFieldChange}
                         id="outlets"
                         placeholder="Minimum Outlets"
                         />
-                    </div>
-                    <div className="alignRight">
-                        <button
+                </FormGroup>        
+                        <Button
+                        color="danger"
                         type="button"
                         onClick={this.searchNewLocation}
-                        >Submit</button>
-                    </div>
-                </fieldset>
-            </form>
-        </React.Fragment>
+                        >Submit</Button>
+            </Form>
+        </div>
         )
     }
 }

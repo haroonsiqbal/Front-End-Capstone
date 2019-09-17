@@ -1,0 +1,9 @@
+.search-form-container {
+    width: 500px;
+    margin: auto;
+    text-align: center;
+    background-color: #E9ECEF;
+    padding: 3%;
+    border-radius: 1%;
+    transform: translateY(5%);
+}

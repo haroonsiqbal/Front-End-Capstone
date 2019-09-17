@@ -226,6 +226,11 @@
       "username": "a",
       "password": "a",
       "id": 3
+    },
+    {
+      "username": "b",
+      "password": "b",
+      "id": 4
     }
   ],
   "usersLocations": [
