@@ -55,33 +55,29 @@ class Register extends Component {
                 <div className="registration-title-container">    
                     <h3 className="registration-title">Register</h3>
                 </div>    
+              <div className="registration-forms-wrapper">
                 <div className="registration-forms-container">
-                <Form onSubmit={this.handleRegister}>
-                <FormGroup>
-                        <Input onChange={this.handleFieldChange} type="username"
-                            id="username"
-                            placeholder="Username"
-                            required="" autoFocus="" />
-                </FormGroup>
-                <FormGroup>
-                        <Input onChange={this.handleFieldChange} type="password"
-                            id="password"
-                            placeholder="Password"
-                            required="" />
-                </FormGroup>
-                </Form>
-                </div>
-                <div className="registration-buttons-container">
-                <div className="registration-button-container1">
-                    <Button color="danger" type="submit">
+                    <Form onSubmit={this.handleRegister}>
+                    <FormGroup>
+                            <Input onChange={this.handleFieldChange} type="username"
+                                id="username"
+                                placeholder="Username"
+                                required="" autoFocus="" />
+                    </FormGroup>
+                    <FormGroup>
+                            <Input onChange={this.handleFieldChange} type="password"
+                                id="password"
+                                placeholder="Password"
+                                required="" />
+                    </FormGroup><br></br>
+                    <Button className="submitb" color="danger" type="submit">
                         SUBMIT
-                    </Button>
-                </div>
-                <div className="registration-button-container2">   
-                    <Button color="danger" type="cancel" onClick={this.handleCancel}>
+                    </Button> 
+                    <Button className="cancelb" color="danger" type="cancel" onClick={this.handleCancel}>
                         CANCEL
                     </Button>
-                </div>
+                </Form>
+            </div>
                 </div>
         </div>
         )

@@ -50,7 +50,7 @@ class Login extends Component {
     return (
     <div className="login-container">
       <div className="login-title-container">
-        <h3 className="login-title">LOGIN</h3>
+        <h3 className="login-title">Login</h3>
       </div>
       <div className="login-forms-container">
           <Form onSubmit={this.handleLogin}>
@@ -72,14 +72,12 @@ class Login extends Component {
                 placeholder="Password"
                 required=""
               />
-            </FormGroup>
-          </Form>
-      </div>
-      <div className="login-button-container">
+            </FormGroup><br></br>
         <Button color="danger" type="submit">
           SUBMIT
         </Button>
-        </div>
+          </Form>
+      </div>
         <div className="registration-link">
         <Link style={{ color: "#FFC23A" }}className="nav-link_login" to="/register">
           Don't have an account?

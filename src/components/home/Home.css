@@ -1,0 +1,24 @@
+body, html {
+    height: 100%;
+
+    /* The image used */
+    background-image: url('../img/welcome.jpg');
+    
+    /* Full height */
+    height: 100vh;
+  
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  .welcome-container {
+      max-width: 500px;
+      margin: auto;
+      transform: translateY(10%)
+  }
+
+  .welcomeb {
+      transform: translateX(228%)
+  }
