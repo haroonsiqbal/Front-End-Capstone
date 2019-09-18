@@ -10,18 +10,18 @@
     },
     {
       "id": 8,
-      "name": "cool place",
-      "address": "123 Main Street",
+      "name": "Crema",
+      "address": "15 Hermitage Ave",
       "neighborhood": "Downtown",
-      "outlets": "8",
+      "outlets": "6",
       "userId": 1
     },
     {
       "id": 9,
-      "name": "zz",
-      "address": "zzz",
-      "neighborhood": "zzz",
-      "outlets": 1,
+      "name": "The Well",
+      "address": "147B 4th Ave N",
+      "neighborhood": "Downtown",
+      "outlets": "2",
       "userId": 3
     },
     {
@@ -71,33 +71,37 @@
       "outlets": 5,
       "userId": 1,
       "id": 15
+    },
+    {
+      "name": "ll",
+      "address": "ll",
+      "neighborhood": "Mid Town",
+      "outlets": 2,
+      "userId": 1,
+      "id": 16
+    },
+    {
+      "id": 17,
+      "name": "qqq",
+      "address": "qq",
+      "neighborhood": "Downtown",
+      "outlets": 2,
+      "userId": 1
+    },
+    {
+      "id": 18,
+      "name": "bryan",
+      "address": "bryan",
+      "neighborhood": "East",
+      "outlets": "4",
+      "userId": 5
     }
   ],
   "locationsComments": [
     {
-      "locationId": 7,
-      "commentId": 2,
-      "id": 1
-    },
-    {
-      "locationId": 7,
-      "commentId": 3,
-      "id": 2
-    },
-    {
       "locationId": 8,
       "commentId": 4,
       "id": 3
-    },
-    {
-      "locationId": 7,
-      "commentId": 16,
-      "id": 4
-    },
-    {
-      "locationId": 7,
-      "commentId": 17,
-      "id": 5
     },
     {
       "locationId": 8,
@@ -118,6 +122,41 @@
       "locationId": 9,
       "commentId": 23,
       "id": 11
+    },
+    {
+      "locationId": 7,
+      "commentId": 24,
+      "id": 12
+    },
+    {
+      "locationId": 7,
+      "commentId": 25,
+      "id": 13
+    },
+    {
+      "locationId": 7,
+      "commentId": 26,
+      "id": 14
+    },
+    {
+      "locationId": 7,
+      "commentId": 27,
+      "id": 15
+    },
+    {
+      "locationId": 18,
+      "commentId": 28,
+      "id": 16
+    },
+    {
+      "locationId": 7,
+      "commentId": 29,
+      "id": 17
+    },
+    {
+      "locationId": 18,
+      "commentId": 32,
+      "id": 20
     }
   ],
   "comments": [
@@ -125,16 +164,6 @@
       "comment": "Hello",
       "userId": 1,
       "id": 1
-    },
-    {
-      "comment": "This is a test",
-      "userId": 1,
-      "id": 2
-    },
-    {
-      "comment": "hello!",
-      "userId": 1,
-      "id": 3
     },
     {
       "comment": "goodbye",
@@ -197,16 +226,6 @@
       "id": 15
     },
     {
-      "comment": "t7",
-      "userId": 1,
-      "id": 16
-    },
-    {
-      "comment": "t8",
-      "userId": 1,
-      "id": 17
-    },
-    {
       "comment": "cool!",
       "userId": 1,
       "id": 18
@@ -225,11 +244,46 @@
       "id": 23,
       "comment": "HELLO2",
       "userId": 3
+    },
+    {
+      "id": 24,
+      "comment": "hello bryan!!!",
+      "userId": 1
+    },
+    {
+      "comment": "hello haroon!",
+      "userId": 5,
+      "id": 25
+    },
+    {
+      "comment": "hello!",
+      "userId": 5,
+      "id": 26
+    },
+    {
+      "comment": "hallo",
+      "userId": 5,
+      "id": 27
+    },
+    {
+      "comment": "Hello!",
+      "userId": 5,
+      "id": 28
+    },
+    {
+      "id": 29,
+      "comment": "cool beans!!!",
+      "userId": 5
+    },
+    {
+      "comment": "Bryan's shop is cool!",
+      "userId": 1,
+      "id": 32
     }
   ],
   "users": [
     {
-      "username": "haroon",
+      "username": "Haroon",
       "password": "h",
       "id": 1
     },
@@ -239,7 +293,7 @@
       "id": 2
     },
     {
-      "username": "a",
+      "username": "Arnold",
       "password": "a",
       "id": 3
     },
@@ -247,6 +301,11 @@
       "username": "b",
       "password": "b",
       "id": 4
+    },
+    {
+      "username": "Bryan",
+      "password": "b",
+      "id": 5
     }
   ],
   "usersLocations": [
@@ -266,23 +325,18 @@
       "id": 3
     },
     {
-      "userId": 3,
-      "locationId": 10,
-      "id": 5
-    },
-    {
       "userId": 1,
       "locationId": 9,
       "id": 6
     },
     {
-      "userId": 1,
-      "locationId": 13,
+      "userId": 5,
+      "locationId": 18,
       "id": 7
     },
     {
-      "userId": 1,
-      "locationId": 14,
+      "userId": 5,
+      "locationId": 7,
       "id": 8
     }
   ]

@@ -21,7 +21,7 @@ class HomeMessage extends Component {
 
                 <form onSubmit={this.handleSearchButton}>
                     <Button className="welcomeb" color="danger" type="submit">
-                        Search
+                        SEARCH
                     </Button>
                 </form>
             </Jumbotron>

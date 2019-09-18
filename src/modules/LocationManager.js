@@ -49,7 +49,7 @@ export default {
     },
 
     getFavs(userId) {
-        return fetch(`${remoteURL}/usersLocations?_expand=location&userId=${userId}`).then(result => result.json())
+        return fetch(`${remoteURL}/usersLocations?_expand=location&_expand=user&userId=${userId}`).then(result => result.json())
     },
 
     getIndividualLocation(id) {

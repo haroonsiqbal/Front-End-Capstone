@@ -58,7 +58,7 @@ class SearchForm extends Component {
                         color="danger"
                         type="button"
                         onClick={this.searchNewLocation}
-                        >Submit</Button>
+                        >SUBMIT</Button>
             </Form>
         </div>
         )
