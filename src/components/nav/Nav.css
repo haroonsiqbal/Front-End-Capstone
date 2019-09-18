@@ -6,7 +6,7 @@
 }
 
 .n-link {
-    color: #FFC23A;
+    color: #E9ECEF; 
     font-size: .8em;
     font-weight: bold;
 }
@@ -14,5 +14,19 @@
 .n-link:hover {
     text-decoration: none;
     font-weight: bold;
-    color: #E9ECEF; 
+    color: #FFC23A;
 }
+
+.n-img {
+    width: 96px;
+    height: 56px;
+    transform: translateY(-23%)
+}
+
+.n-username {
+    font-size: .8em;
+    font-weight: bold;
+    line-height: 1px;
+    color: #FFC23A;
+}
+
