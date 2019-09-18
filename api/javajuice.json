@@ -57,20 +57,12 @@
       "id": 13
     },
     {
-      "name": "ff",
-      "address": "ff",
+      "id": 14,
+      "name": "Dunn Bros",
+      "address": "401 Church St",
       "neighborhood": "Downtown",
-      "outlets": 2,
-      "userId": 1,
-      "id": 14
-    },
-    {
-      "name": "gg",
-      "address": "gg",
-      "neighborhood": "Downtown",
-      "outlets": 5,
-      "userId": 1,
-      "id": 15
+      "outlets": "5",
+      "userId": 1
     },
     {
       "name": "ll",
@@ -81,82 +73,47 @@
       "id": 16
     },
     {
-      "id": 17,
-      "name": "qqq",
-      "address": "qq",
-      "neighborhood": "Downtown",
-      "outlets": 2,
-      "userId": 1
-    },
-    {
       "id": 18,
       "name": "bryan",
       "address": "bryan",
       "neighborhood": "East",
       "outlets": "4",
       "userId": 5
+    },
+    {
+      "name": "East Coffee",
+      "address": "123 Smith St",
+      "neighborhood": "East",
+      "outlets": 2,
+      "userId": 1,
+      "id": 19
     }
   ],
   "locationsComments": [
     {
-      "locationId": 8,
-      "commentId": 4,
-      "id": 3
-    },
-    {
-      "locationId": 8,
-      "commentId": 18,
-      "id": 6
-    },
-    {
-      "locationId": 9,
-      "commentId": 19,
-      "id": 7
-    },
-    {
-      "locationId": 9,
-      "commentId": 21,
-      "id": 9
-    },
-    {
-      "locationId": 9,
-      "commentId": 23,
-      "id": 11
-    },
-    {
-      "locationId": 7,
-      "commentId": 24,
-      "id": 12
-    },
-    {
-      "locationId": 7,
-      "commentId": 25,
-      "id": 13
-    },
-    {
-      "locationId": 7,
-      "commentId": 26,
-      "id": 14
-    },
-    {
-      "locationId": 7,
-      "commentId": 27,
-      "id": 15
-    },
-    {
-      "locationId": 18,
-      "commentId": 28,
-      "id": 16
-    },
-    {
-      "locationId": 7,
-      "commentId": 29,
-      "id": 17
-    },
-    {
       "locationId": 18,
       "commentId": 32,
       "id": 20
+    },
+    {
+      "locationId": 7,
+      "commentId": 33,
+      "id": 21
+    },
+    {
+      "locationId": 9,
+      "commentId": 34,
+      "id": 22
+    },
+    {
+      "locationId": 7,
+      "commentId": 35,
+      "id": 23
+    },
+    {
+      "locationId": 8,
+      "commentId": 36,
+      "id": 24
     }
   ],
   "comments": [
@@ -164,11 +121,6 @@
       "comment": "Hello",
       "userId": 1,
       "id": 1
-    },
-    {
-      "comment": "goodbye",
-      "userId": 1,
-      "id": 4
     },
     {
       "comment": "Hello",
@@ -226,59 +178,37 @@
       "id": 15
     },
     {
-      "comment": "cool!",
-      "userId": 1,
-      "id": 18
-    },
-    {
-      "id": 19,
-      "comment": "zz is the zz!!",
-      "userId": 1
-    },
-    {
-      "comment": "ggg",
-      "userId": 3,
-      "id": 21
-    },
-    {
-      "id": 23,
-      "comment": "HELLO2",
-      "userId": 3
-    },
-    {
-      "id": 24,
-      "comment": "hello bryan!!!",
-      "userId": 1
-    },
-    {
-      "comment": "hello haroon!",
-      "userId": 5,
-      "id": 25
-    },
-    {
-      "comment": "hello!",
-      "userId": 5,
-      "id": 26
-    },
-    {
-      "comment": "hallo",
-      "userId": 5,
-      "id": 27
-    },
-    {
-      "comment": "Hello!",
-      "userId": 5,
-      "id": 28
-    },
-    {
-      "id": 29,
-      "comment": "cool beans!!!",
-      "userId": 5
-    },
-    {
       "comment": "Bryan's shop is cool!",
       "userId": 1,
       "id": 32
+    },
+    {
+      "id": 33,
+      "comment": "I love Frothy Monkey!",
+      "userId": 1,
+      "name": "Haroon",
+      "timestamp": "Wed, 18 Sep 2019 20:21:55 GMT"
+    },
+    {
+      "comment": "Good place!",
+      "userId": 3,
+      "name": "Arnold",
+      "timestamp": "Wed, 18 Sep 2019 19:14:48 GMT",
+      "id": 34
+    },
+    {
+      "id": 35,
+      "comment": "This place is great!!!",
+      "userId": 5,
+      "name": "Bryan",
+      "timestamp": "Wed, 18 Sep 2019 20:10:56 GMT"
+    },
+    {
+      "comment": "Best espresso in the city!",
+      "userId": 1,
+      "name": "Haroon",
+      "timestamp": "Wed, 18 Sep 2019 20:13:25 GMT",
+      "id": 36
     }
   ],
   "users": [
@@ -338,6 +268,11 @@
       "userId": 5,
       "locationId": 7,
       "id": 8
+    },
+    {
+      "userId": 1,
+      "locationId": 14,
+      "id": 9
     }
   ]
 }

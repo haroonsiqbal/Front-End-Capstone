@@ -7,17 +7,19 @@ class CommentCard extends Component {
     const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
     if (this.props.comment.comment.userId === currentUser.id) {
       return (
-        <div className="card">
-          <p>{this.props.comment.comment.comment}</p>
+        <div className="comment-card-user">
+          <p className="comment-message">{this.props.comment.comment.comment}</p>
+          <p className="comment-byline">Submitted by {this.props.comment.comment.name} on {this.props.comment.comment.timestamp}</p>
           <EditCommentModalHelper {...this.props} />
-          <button onClick={() => this.props.deleteComment(this.props.comment.comment.id)}>Delete</button>
+          <button className="card-button-comments" onClick={() => this.props.deleteComment(this.props.comment.comment.id)}>DELETE</button>
         </div>
       );
     } else {
       return <>
-        <div className="card">
+        <div className="comment-card">
           <div className="card-content">
-            <p>{this.props.comment.comment.comment}</p>
+            <p className="comment-message">{this.props.comment.comment.comment}</p>
+            <p className="comment-byline">Submitted by {this.props.comment.comment.name} on {this.props.comment.comment.timestamp}</p>
           </div>
         </div></>
     }

@@ -1,5 +1,7 @@
 import React, { Component } from "react"
 import LocationManager from '../../modules/LocationManager'
+import { Button, Jumbotron, Form, FormGroup, Label, Input, FormText } from "reactstrap";
+import './EditLocation.css'
 
 class EditLocationModal extends Component {
 
@@ -53,12 +55,12 @@ class EditLocationModal extends Component {
 
     render() {
         return (
-            <>
-                <form>
-          <fieldset>
-            <div className="formgrid">
+            <div className="edit-location-container">
+            <h1>Edit Location</h1><hr></hr>
+                <Form>
+          <FormGroup>
               <label htmlFor="locationName">Name</label>
-              <input
+              <Input
                 type="text"
                 required
                 className="form-control"
@@ -66,9 +68,10 @@ class EditLocationModal extends Component {
                 id="locationName"
                 value={this.state.locationName}
               />
-
+          </FormGroup>
+          <FormGroup>
               <label htmlFor="locationAddress">Address</label>
-              <input
+              <Input
                 type="text"
                 required
                 className="form-control"
@@ -76,8 +79,10 @@ class EditLocationModal extends Component {
                 id="locationAddress"
                 value={this.state.locationAddress}
               />
+            </FormGroup>
+            <FormGroup>
               <label htmlFor="locationNeighborhood">Neighborhood</label>
-              <input
+              <Input
                 type="text"
                 required
                 className="form-control"
@@ -85,8 +90,10 @@ class EditLocationModal extends Component {
                 id="locationNeighborhood"
                 value={this.state.locationNeighborhood}
               />
+            </FormGroup>
+            <FormGroup>
               <label htmlFor="locationOutlets">Outlets</label>
-              <input
+              <Input
                 type="text"
                 required
                 className="form-control"
@@ -94,17 +101,16 @@ class EditLocationModal extends Component {
                 id="locationOutlets"
                 value={this.state.locationOutlets}
               />
-            </div>
-            <div className="alignRight">
-              <button
+            </FormGroup>
+              <Button
+                color="danger"
+                size="sm"
                 type="button" disabled={this.state.loadingStatus}
                 onClick={this.updateExistingLocation}
                 className="btn btn-primary"
-              >Submit</button>
+              >UPDATE</Button>
+        </Form>
             </div>
-          </fieldset>
-        </form>
-            </>
         )
     }
 }

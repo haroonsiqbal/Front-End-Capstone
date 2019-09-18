@@ -39,7 +39,7 @@ class EditCommentModalHelper extends Component {
     
     
         </ReactModal>
-        <button onClick={this.openModal}>Edit</button>
+        <button className="card-button-comments" onClick={this.openModal}>EDIT</button>
 
             </>
         )

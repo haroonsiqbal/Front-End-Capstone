@@ -1,0 +1,58 @@
+.comment-card-user {
+    width: 400px;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #302E30;
+    color: #E9ECEF;
+}
+
+.comment-card {
+    width: 400px;
+    border-radius: 25px;
+    padding: 20px;
+    margin: 20px;
+    background-color: #E9ECEF;
+    color: black;
+}
+
+.card-button-comments {
+    background-color: #E9ECEF;
+    color: #302E30;
+    border: none;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 9px;
+    padding-right: 9px;
+    margin: 5px;
+    font-size: .7em;
+    border-radius: 5px;
+}
+
+.card-button-comments:hover {
+    background-color: #FFC23A;
+    color: #302E30;
+}
+
+.comment-byline {
+    font-size: .7em;
+    line-height: 2px;
+}
+
+.comment-message {
+    font-weight: bold;
+}
+
+.comment-submit-b {
+    margin-top: 10px;
+}
+
+.comment-input-container {
+    margin: 20px;
+    width: 400px;
+}
+
+.edit-comments-container {
+    width: 400px;
+    margin: 20px;
+}
