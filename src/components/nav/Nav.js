@@ -5,22 +5,22 @@ import './Nav.css'
 class Nav extends Component {
     render() {
         return (
-            <nav className="navbar bg-danger">
+            <nav className="n-bar">
                 <ul className="nav nav-pills nav-fill">
                     <li className="nav-item">
-                        <Link className="nav-link text-white" to="/Home">Home</Link>
+                        <Link className="n-link" to="/Home">HOME</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link text-white" to="/Add">Add</Link>
+                        <Link className="n-link" to="/Add">ADD</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link text-white" to="/Search">Search</Link>
+                        <Link className="n-link" to="/Search">SEARCH</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link text-white" to="/MyLocations">My Locations</Link>
+                        <Link className="n-link" to="/MyLocations">MY LOCATIONS</Link>
                     </li>
                     <li className="nav-item">
-                        <Link className="nav-link text-white" to="/LogOut">Log Out</Link>
+                        <Link className="n-link" to="/LogOut">LOG OUT</Link>
                     </li>
                 </ul>
             </nav>

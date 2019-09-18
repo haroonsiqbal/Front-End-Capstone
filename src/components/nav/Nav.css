@@ -1,0 +1,18 @@
+.n-bar {
+    background-color: #302E30;
+    height: 70px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.n-link {
+    color: #FFC23A;
+    font-size: .8em;
+    font-weight: bold;
+}
+
+.n-link:hover {
+    text-decoration: none;
+    font-weight: bold;
+    color: #E9ECEF; 
+}

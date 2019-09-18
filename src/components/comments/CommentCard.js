@@ -18,7 +18,6 @@ class CommentCard extends Component {
         <div className="card">
           <div className="card-content">
             <p>{this.props.comment.comment.comment}</p>
-            
           </div>
         </div></>
     }
