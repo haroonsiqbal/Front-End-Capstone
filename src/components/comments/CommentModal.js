@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import CommentManager from "../../modules/CommentManager"
 import CommentCard from "./CommentCard"
+import { Button, Jumbotron, Form, FormGroup, Label, Input, FormText } from "reactstrap";
+import './Comments.css'
 
 
 class CommentModal extends Component {
@@ -36,12 +38,17 @@ class CommentModal extends Component {
 
     constructNewComment = event => {
         const username = (JSON.parse(sessionStorage.getItem("credentials")))
+        const name = username.username
+        const newDate = new Date();
+        const timestamp = newDate.toUTCString();
         if (this.state.comment === "") {
             window.alert("Please input a comment");
         } else {
             const comment = {
                 comment: this.state.comment,
-                userId: parseInt(username.id)
+                userId: parseInt(username.id),
+                name: name,
+                timestamp: timestamp
             };
 
             CommentManager.post(comment)
@@ -65,10 +72,10 @@ class CommentModal extends Component {
     };
     render() {
         return (
-            <>
+            <div className="comments-container">
                 <h1 className="feature__name h1_comments">Comments</h1>
             <hr></hr>
-                <div className="commentContainer">
+                <div className="comment-box">
                     {this.state.comments.map(comment =>
                         <CommentCard
                             key={comment.id}
@@ -78,18 +85,22 @@ class CommentModal extends Component {
                         />
                     )}
                 </div>
-                <div>
-                    <input
+                <div className="comment-input-container">
+                <Form>
+                    <FormGroup>
+                    <Input
                         type="text"
                         required
                         className="form-control"
                         onChange={this.handleFieldChange}
                         id="comment"
-                        placeholder="Type a Comment"
+                        placeholder="Type a Comment..."
                     />
+                <Button className="comment-submit-b" color="danger" size="sm" onClick={this.constructNewComment}>SUBMIT</Button>
+                </FormGroup>
+                </Form>
                 </div>
-                <button onClick={this.constructNewComment}>Submit</button>
-            </>
+            </div>
         )
     }
 }
