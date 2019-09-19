@@ -34,9 +34,9 @@ class SearchCard extends Component {
         <div className="card">
           <div className="card-content">
             <h2 className="card-h2"> <span className="card-locationName">{this.props.shop.name}</span></h2>
-            <p className="card-p">Address: {this.props.shop.address}</p>
-            <p className="card-p">Neighborhood: {this.props.shop.neighborhood}</p>
-            <p className="card-p">Outlets: {this.props.shop.outlets}</p>
+            <p className="card-p"><img className="icon"src={ require('../img/address-icon-red.png') } alt="outlet icon"/>Address: {this.props.shop.address}</p>
+            <p className="card-p"><img className="icon"src={ require('../img/neighborhood-icon-red.png') } alt="outlet icon"/>Neighborhood: {this.props.shop.neighborhood}</p>
+            <p className="card-p"><img className="icon"src={ require('../img/outlet-icon-red.png') } alt="outlet icon"/>Outlets: {this.props.shop.outlets}</p>
             <button className="card-button">COMMENTS</button>
             <button className="card-button" onClick={() => this.favWrapper()}>{text}</button>
           </div>
