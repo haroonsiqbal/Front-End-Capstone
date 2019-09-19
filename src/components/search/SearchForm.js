@@ -38,13 +38,25 @@ class SearchForm extends Component {
             <h2>Search</h2>
             <Form>
                 <FormGroup>
+                       <Label for="neighborhood">Neighborhood</Label>
                        <Input
-                        type="text"
+                        type="select"
                         required
                         onChange={this.handleFieldChange}
                         id="neighborhood"
-                        placeholder="Neighborhood"
-                        />
+                        placeholder="Neighborhood">
+                        <option>Downtown</option>
+                        <option>Germantown</option>
+                        <option>East Nashville</option>
+                        <option>Charlotte Pike</option>
+                        <option>8th Avenue</option>
+                        <option>12 South</option>
+                        <option>The Gulch</option>
+                        <option>West End</option>
+                        <option>Hillsboro Village</option>
+                        <option>Mid-Town</option>
+                        <option>Wedgewood-Houston</option>
+                        </Input>
                 </FormGroup>
                 <FormGroup>      
                         <Input
