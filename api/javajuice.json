@@ -87,6 +87,14 @@
       "outlets": 2,
       "userId": 1,
       "id": 19
+    },
+    {
+      "name": "Ugly Mugs",
+      "address": "1886 Eastland Ave",
+      "neighborhood": "East",
+      "outlets": 10,
+      "userId": 6,
+      "id": 20
     }
   ],
   "locationsComments": [
@@ -114,6 +122,16 @@
       "locationId": 8,
       "commentId": 36,
       "id": 24
+    },
+    {
+      "locationId": 14,
+      "commentId": 37,
+      "id": 25
+    },
+    {
+      "locationId": 8,
+      "commentId": 38,
+      "id": 26
     }
   ],
   "comments": [
@@ -209,6 +227,20 @@
       "name": "Haroon",
       "timestamp": "Wed, 18 Sep 2019 20:13:25 GMT",
       "id": 36
+    },
+    {
+      "comment": "yum",
+      "userId": 6,
+      "name": "madisonkarrh",
+      "timestamp": "Thu, 19 Sep 2019 00:03:07 GMT",
+      "id": 37
+    },
+    {
+      "comment": "yum",
+      "userId": 6,
+      "name": "madisonkarrh",
+      "timestamp": "Thu, 19 Sep 2019 00:04:02 GMT",
+      "id": 38
     }
   ],
   "users": [
@@ -236,6 +268,16 @@
       "username": "Bryan",
       "password": "b",
       "id": 5
+    },
+    {
+      "username": "Dave",
+      "password": "d",
+      "id": 6
+    },
+    {
+      "username": "Felicia",
+      "password": "F",
+      "id": 7
     }
   ],
   "usersLocations": [
@@ -273,6 +315,11 @@
       "userId": 1,
       "locationId": 14,
       "id": 9
+    },
+    {
+      "userId": 7,
+      "locationId": 7,
+      "id": 10
     }
   ]
 }
