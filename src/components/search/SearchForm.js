@@ -19,17 +19,14 @@ class SearchForm extends Component {
     searchNewLocation = evt => {
         evt.preventDefault();
         const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
-
-        if (this.state.neighborhood === "" || this.state.outlets === "") {
-            window.alert("Please fill out all fields.");
-        } else {
             this.setState({ loadingStatus: true });
             const neighborhood = this.state.neighborhood
+            console.log(neighborhood)
             const outlets = parseInt(this.state.outlets)
             console.log(outlets)
 
             this.props.getSearchResults(neighborhood, outlets)
-        }
+        
     };
 
     render(){
@@ -39,21 +36,45 @@ class SearchForm extends Component {
             <Form>
                 <FormGroup>
                        <Input
-                        type="text"
+                        type="select"
                         required
                         onChange={this.handleFieldChange}
                         id="neighborhood"
-                        placeholder="Neighborhood"
-                        />
+                        placeholder="Neighborhood">
+                        <option>Neighborhood</option>
+                        <option>Downtown</option>
+                        <option>Germantown</option>
+                        <option>East Nashville</option>
+                        <option>Charlotte Pike</option>
+                        <option>8th Avenue</option>
+                        <option>12 South</option>
+                        <option>The Gulch</option>
+                        <option>West End</option>
+                        <option>Hillsboro Village</option>
+                        <option>Mid-Town</option>
+                        <option>Wedgewood-Houston</option>
+                        </Input>
                 </FormGroup>
-                <FormGroup>      
+                <FormGroup>     
                         <Input
-                        type="text"
+                        type="select"
                         required
                         onChange={this.handleFieldChange}
                         id="outlets"
                         placeholder="Minimum Outlets"
-                        />
+                        >
+                        <option>Minimum Outlets</option>
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option> 
+                        </Input>
                 </FormGroup>        
                         <Button
                         color="danger"

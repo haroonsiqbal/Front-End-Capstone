@@ -76,7 +76,7 @@
       "id": 18,
       "name": "bryan",
       "address": "bryan",
-      "neighborhood": "East",
+      "neighborhood": "East Nashville",
       "outlets": "4",
       "userId": 5
     },
@@ -95,6 +95,22 @@
       "outlets": 10,
       "userId": 6,
       "id": 20
+    },
+    {
+      "name": "Location",
+      "address": "123",
+      "neighborhood": "Downtown",
+      "outlets": 1,
+      "userId": 1,
+      "id": 21
+    },
+    {
+      "name": "Location 2",
+      "address": "1234",
+      "neighborhood": "Downtown",
+      "outlets": 4,
+      "userId": 1,
+      "id": 22
     }
   ],
   "locationsComments": [
