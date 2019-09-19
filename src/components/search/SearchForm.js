@@ -58,14 +58,26 @@ class SearchForm extends Component {
                         <option>Wedgewood-Houston</option>
                         </Input>
                 </FormGroup>
-                <FormGroup>      
+                <FormGroup>
+                        <Label for="outlets">Minimum Outlets</Label>      
                         <Input
-                        type="text"
+                        type="select"
                         required
                         onChange={this.handleFieldChange}
                         id="outlets"
                         placeholder="Minimum Outlets"
-                        />
+                        >
+                        <option>1</option>
+                        <option>2</option>
+                        <option>3</option>
+                        <option>4</option>
+                        <option>5</option>
+                        <option>6</option>
+                        <option>7</option>
+                        <option>8</option>
+                        <option>9</option>
+                        <option>10</option> 
+                        </Input>
                 </FormGroup>        
                         <Button
                         color="danger"
