@@ -19,17 +19,14 @@ class SearchForm extends Component {
     searchNewLocation = evt => {
         evt.preventDefault();
         const currentUser = JSON.parse(sessionStorage.getItem("credentials"))
-
-        if (this.state.neighborhood === "" || this.state.outlets === "") {
-            window.alert("Please fill out all fields.");
-        } else {
             this.setState({ loadingStatus: true });
             const neighborhood = this.state.neighborhood
+            console.log(neighborhood)
             const outlets = parseInt(this.state.outlets)
             console.log(outlets)
 
             this.props.getSearchResults(neighborhood, outlets)
-        }
+        
     };
 
     render(){
@@ -38,13 +35,13 @@ class SearchForm extends Component {
             <h2>Search</h2>
             <Form>
                 <FormGroup>
-                       <Label for="neighborhood">Neighborhood</Label>
                        <Input
                         type="select"
                         required
                         onChange={this.handleFieldChange}
                         id="neighborhood"
                         placeholder="Neighborhood">
+                        <option>Neighborhood</option>
                         <option>Downtown</option>
                         <option>Germantown</option>
                         <option>East Nashville</option>
@@ -58,8 +55,7 @@ class SearchForm extends Component {
                         <option>Wedgewood-Houston</option>
                         </Input>
                 </FormGroup>
-                <FormGroup>
-                        <Label for="outlets">Minimum Outlets</Label>      
+                <FormGroup>     
                         <Input
                         type="select"
                         required
@@ -67,6 +63,7 @@ class SearchForm extends Component {
                         id="outlets"
                         placeholder="Minimum Outlets"
                         >
+                        <option>Minimum Outlets</option>
                         <option>1</option>
                         <option>2</option>
                         <option>3</option>
