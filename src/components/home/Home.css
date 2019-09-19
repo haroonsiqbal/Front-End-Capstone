@@ -16,9 +16,10 @@ body, html {
   .welcome-container {
       max-width: 500px;
       margin: auto;
-      transform: translateY(10%)
+      transform: translateY(10%);
+      padding: 10px;
   }
 
   .welcomeb {
-      transform: translateX(190%)
+      transform: translateX(180%)
   }

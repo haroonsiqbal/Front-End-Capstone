@@ -46,3 +46,10 @@
     background-color: #FFC23A;
     color: #302E30;
 }
+
+.icon {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    margin-right: 5px;
+}

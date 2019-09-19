@@ -51,7 +51,7 @@ class SearchForm extends Component {
                         <option>The Gulch</option>
                         <option>West End</option>
                         <option>Hillsboro Village</option>
-                        <option>Mid-Town</option>
+                        <option>Midtown</option>
                         <option>Wedgewood-Houston</option>
                         </Input>
                 </FormGroup>
