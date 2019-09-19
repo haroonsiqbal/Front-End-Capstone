@@ -26,6 +26,7 @@ class SearchForm extends Component {
             this.setState({ loadingStatus: true });
             const neighborhood = this.state.neighborhood
             const outlets = parseInt(this.state.outlets)
+            console.log(outlets)
 
             this.props.getSearchResults(neighborhood, outlets)
         }
