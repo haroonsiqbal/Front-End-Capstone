@@ -136,11 +136,6 @@
       "id": 20
     },
     {
-      "locationId": 7,
-      "commentId": 33,
-      "id": 21
-    },
-    {
       "locationId": 9,
       "commentId": 34,
       "id": 22
@@ -233,13 +228,6 @@
       "id": 32
     },
     {
-      "id": 33,
-      "comment": "I love Frothy Monkey!",
-      "userId": 1,
-      "name": "Haroon",
-      "timestamp": "Wed, 18 Sep 2019 20:21:55 GMT"
-    },
-    {
       "comment": "Good place!",
       "userId": 3,
       "name": "Arnold",
@@ -313,11 +301,6 @@
     }
   ],
   "usersLocations": [
-    {
-      "userId": 1,
-      "locationId": 7,
-      "id": 1
-    },
     {
       "userId": 1,
       "locationId": 8,
