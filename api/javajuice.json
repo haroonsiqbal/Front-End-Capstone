@@ -5,7 +5,7 @@
       "name": "Frothy Monkey",
       "address": "235 5th Ave N",
       "neighborhood": "Downtown",
-      "outlets": "8",
+      "outlets": "22",
       "userId": 1
     },
     {
@@ -21,7 +21,7 @@
       "name": "The Well",
       "address": "147B 4th Ave N",
       "neighborhood": "Downtown",
-      "outlets": "2",
+      "outlets": "12",
       "userId": 3
     },
     {
@@ -61,7 +61,7 @@
       "name": "Dunn Bros",
       "address": "401 Church St",
       "neighborhood": "Downtown",
-      "outlets": "5",
+      "outlets": "6",
       "userId": 1
     },
     {
@@ -97,22 +97,6 @@
       "id": 20
     },
     {
-      "name": "Location",
-      "address": "123",
-      "neighborhood": "Downtown",
-      "outlets": 1,
-      "userId": 1,
-      "id": 21
-    },
-    {
-      "name": "Location 2",
-      "address": "1234",
-      "neighborhood": "Downtown",
-      "outlets": 4,
-      "userId": 1,
-      "id": 22
-    },
-    {
       "name": "Coffee Shop",
       "address": "456 ave",
       "neighborhood": "Midtown",
@@ -134,11 +118,6 @@
       "locationId": 18,
       "commentId": 32,
       "id": 20
-    },
-    {
-      "locationId": 7,
-      "commentId": 33,
-      "id": 21
     },
     {
       "locationId": 9,
@@ -233,13 +212,6 @@
       "id": 32
     },
     {
-      "id": 33,
-      "comment": "I love Frothy Monkey!",
-      "userId": 1,
-      "name": "Haroon",
-      "timestamp": "Wed, 18 Sep 2019 20:21:55 GMT"
-    },
-    {
       "comment": "Good place!",
       "userId": 3,
       "name": "Arnold",
@@ -315,11 +287,6 @@
   "usersLocations": [
     {
       "userId": 1,
-      "locationId": 7,
-      "id": 1
-    },
-    {
-      "userId": 1,
       "locationId": 8,
       "id": 2
     },
@@ -352,6 +319,11 @@
       "userId": 7,
       "locationId": 7,
       "id": 10
+    },
+    {
+      "userId": 1,
+      "locationId": 7,
+      "id": 11
     }
   ]
 }
