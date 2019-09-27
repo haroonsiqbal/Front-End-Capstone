@@ -4,7 +4,10 @@ import MapManager from '../../modules/MapManager';
 
 class MapModal extends Component {
     state = {
-        mapObject: {}
+        center: {
+            lat: 0,
+            lng: 0
+        }
       };
 
     componentDidMount() {
@@ -12,12 +15,11 @@ class MapModal extends Component {
       }
     
     getMapObject = () => {
-        MapManager.getLatLng("235", "5th", "Ave").then(mapObject => {
+        MapManager.getLatLng("15", "Hermitage", "Ave").then(mapObject => {
             this.setState({
-                mapObject: mapObject
+                center: mapObject.results[0].geometry.location
             });
-            console.log(this.state.mapObject.results[0].geometry.location.lat)
-            console.log(this.state.mapObject.results[0].geometry.location.lng)
+            //console.log(center)
 
         })
       }
@@ -36,10 +38,9 @@ class MapModal extends Component {
               google={this.props.google}
               zoom={17}
               style={mapStyles}
-              initialCenter={{lat: 36.1640461, lng: -86.78104760000001}}
-              center={{ lat: `{this.state.mapObject.results[0].geometry.location.lat}`, lng: `{this.state.mapObject.results[0].geometry.location.lng}` }}
+              center={this.state.center}
             >
-                <Marker name={""} />
+                <Marker position={this.state.center} />
             </Map>
         );
     }
