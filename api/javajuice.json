@@ -74,8 +74,8 @@
     },
     {
       "id": 18,
-      "name": "bryan",
-      "address": "bryan",
+      "name": "Sky Blue Cafe",
+      "address": "700 Fatherland St",
       "neighborhood": "East Nashville",
       "outlets": "4",
       "userId": 5
@@ -111,6 +111,14 @@
       "outlets": 3,
       "userId": 1,
       "id": 24
+    },
+    {
+      "name": "Red Bicycle",
+      "address": "1200 5th Ave",
+      "neighborhood": "Germantown",
+      "outlets": 7,
+      "userId": 5,
+      "id": 25
     }
   ],
   "locationsComments": [
@@ -324,6 +332,16 @@
       "userId": 1,
       "locationId": 7,
       "id": 11
+    },
+    {
+      "userId": 3,
+      "locationId": 7,
+      "id": 12
+    },
+    {
+      "userId": 5,
+      "locationId": 25,
+      "id": 13
     }
   ]
 }

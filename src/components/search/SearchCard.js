@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import LocationManager from '../../modules/LocationManager';
 import "./Search.css"
+import MapModalHelper from '../maps/MapModalHelper'
 
 class SearchCard extends Component {
   state = {
@@ -37,7 +38,7 @@ class SearchCard extends Component {
             <p className="card-p"><img className="icon"src={ require('../img/address-icon-red.png') } alt="outlet icon"/>Address: {this.props.shop.address}</p>
             <p className="card-p"><img className="icon"src={ require('../img/neighborhood-icon-red.png') } alt="outlet icon"/>Neighborhood: {this.props.shop.neighborhood}</p>
             <p className="card-p"><img className="icon"src={ require('../img/outlet-icon-red.png') } alt="outlet icon"/>Outlets: {this.props.shop.outlets}</p>
-            <button className="card-button">COMMENTS</button>
+            <MapModalHelper {...this.props} />
             <button className="card-button" onClick={() => this.favWrapper()}>{text}</button>
           </div>
         </div>

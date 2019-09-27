@@ -39,7 +39,7 @@ class LocationList extends Component {
   render() {
     return (
       <React.Fragment>
-        <div className="container-cards">
+        <div className="location-container-cards">
           {this.state.locations.map(shop =>
         <LocationCard
             key={shop.id}
