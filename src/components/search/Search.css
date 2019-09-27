@@ -16,6 +16,14 @@
     
 }
 
+.location-container-cards {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-bottom: 5%;
+    
+}
+
 .card {
     flex-basis: 40%;
     padding: 4%;
