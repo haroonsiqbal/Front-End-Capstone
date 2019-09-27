@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { Map, GoogleApiWrapper, Marker } from 'google-maps-react';
+import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
 import MapManager from '../../modules/MapManager';
 
 class MapModal2 extends Component {
@@ -7,12 +7,22 @@ class MapModal2 extends Component {
         center: {
             lat: 36.164552,
             lng: -86.781070
-        }
+        },
+        showingInfoWindow: false,
+        activeMarker: {},
+        selectedPlace: {},
       };
 
     componentDidMount() {
         this.getMapObject();
       }
+
+    onMarkerClick = (props, marker, e) =>
+      this.setState({
+        selectedPlace: props,
+        activeMarker: marker,
+        showingInfoWindow: true
+    });
 
     getMapObject = () => {
         const address = this.props.shop.address
@@ -34,6 +44,7 @@ class MapModal2 extends Component {
             height: '100%',
           };
         
+        const active = true   
         return (
             <Map
               google={this.props.google}
@@ -41,11 +52,21 @@ class MapModal2 extends Component {
               style={mapStyles}
               center={this.state.center}
             >
-            <Marker
+            <Marker onClick={this.onMarkerClick}
               title={this.props.shop.name}
               name={this.props.shop.name}
               position={this.state.center}
             />
+            <InfoWindow
+              marker={this.state.activeMarker}
+              visible={this.state.showingInfoWindow}>
+            <div>
+              <h2 className="card-h2">{this.props.shop.name}</h2>
+              <p><img className="icon"src={ require('../img/address-icon-red.png') } alt="address icon"/>Address: {this.props.shop.address}</p>
+              <p><img className="icon"src={ require('../img/neighborhood-icon-red.png') } alt="neighborhood icon"/>Neighborhood: {this.props.shop.neighborhood}</p>
+              <p><img className="icon"src={ require('../img/outlet-icon-red.png') } alt="outlet icon"/>Outlets: {this.props.shop.outlets}</p>
+            </div>
+        </InfoWindow>
             </Map>
         );
     }
