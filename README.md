@@ -1,68 +1,35 @@
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+### JAVE JUICE
 
-## Available Scripts
+Java Juice is an application designed to allow users to search coffee shops by the number of outlets available. The goal of the app is to help users avoid running out of battery life while working or studying on the go.
 
-In the project directory, you can run:
+### Login and Registration
 
-### `npm start`
+When launching the app, the user will be directed to the landing page. To log in, click the login button and enter username and password. If the user does not have an account, click the "Don't have account?" link, enter a new username and password, and click submit.
 
-Runs the app in the development mode.<br>
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+### Home Page
 
-The page will reload if you make edits.<br>
-You will also see any lint errors in the console.
+Upon logging in, the user will be redirected to the home page. The home page displays the user's name and provides brief instructions for the purpose of the app. To begin, the user should click the Search button.
 
-### `npm test`
+### Search Page
 
-Launches the test runner in the interactive watch mode.<br>
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+From the search page, a user can search for coffee shop locations within a specific neighborhood and can select the minimum number of outlets required. The search results will display all locations that match the specified criteria. On the search result card, the user can select the MAP button to display a map of the shop's location. To add a location to the user's "My Locations" section, click the ADD button on the result card. The text on the button for that location will change to "Added" to confirm that the location has been added.
 
-### `npm run build`
+### Add Page
 
-Builds the app for production to the `build` folder.<br>
-It correctly bundles React in production mode and optimizes the build for the best performance.
+The Add page allows users to add new locations to the database. The user should input the name of the location and street address and should select the neighborhood and number of outlets from the dropdown menus. Once submitted, the new location information will be added to the database and the user will be redirected to the search page. The add function allows for the app to grow via a crowd-sourcing model, with multiple users adding new locations to continually grow the database.
 
-The build is minified and the filenames include the hashes.<br>
-Your app is ready to be deployed!
+### My Locations Page
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+The My Locations page displays all locations that have been added by the user, regardless of neighborhood or number of outlets. To remove an individual location My Locations, click the DELETE button on the shop's location card. If the location has been personally added by the user, the user will also have the ability to edit the location information. To do so, click the EDIT button on the location card, update the information fields as needed, and click submit. Users can also view maps of individiual locations from the My Locations page by clicking the MAP button on the location card.
 
-### `npm run eject`
+### Comments
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+Users also have the ability to submit comments for individual coffee shop locations. To do so, navigate to the My Locations section and click the COMMENTS button for the specified location. A modal will appear that displays any comments that have already been submitted for that location. In addition to the comment message, each comment will also display the name of the user who submitted the comment and a timestamp of when the comment was submitted. If the user submitted the comment, the comment will also include an option to edit and delete the comment. To edit, click the EDIT button, update the message, and click submit. Upon submission, the timestamp for the comment will also be updated. To remove the comment, click the DELETE button.
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Log Out
 
-Instead, it will copy all the configuration files and the transitive dependencies (Webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+To exit the application, click the Log Out button at the top right corner of the screen. Upon logging out, the user will be redirected to the landing page. Logging out will also clear all session storage information for the user.
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/code-splitting
-
-### Analyzing the Bundle Size
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size
-
-### Making a Progressive Web App
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app
-
-### Advanced Configuration
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/advanced-configuration
-
-### Deployment
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/deployment
-
-### `npm run build` fails to minify
-
-This section has moved here: https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify
