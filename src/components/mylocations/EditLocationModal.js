@@ -29,7 +29,7 @@ class EditLocationModal extends Component {
           name: this.state.locationName,
           address: this.state.locationAddress,
           neighborhood: this.state.locationNeighborhood,
-          outlets: this.state.locationOutlets,
+          outlets: parseInt(this.state.locationOutlets),
           userId: currentUser.id
         };
         
