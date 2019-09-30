@@ -119,6 +119,22 @@
       "outlets": 7,
       "userId": 5,
       "id": 25
+    },
+    {
+      "id": 26,
+      "name": "Ugly Mugs",
+      "address": "1886 Eastland Ave",
+      "neighborhood": "aa",
+      "outlets": 5,
+      "userId": 6
+    },
+    {
+      "id": 27,
+      "name": "Ugly Mugs",
+      "address": "1886 Eastland Ave",
+      "neighborhood": "bb",
+      "outlets": 5,
+      "userId": 6
     }
   ],
   "locationsComments": [
@@ -329,11 +345,6 @@
       "id": 10
     },
     {
-      "userId": 1,
-      "locationId": 7,
-      "id": 11
-    },
-    {
       "userId": 3,
       "locationId": 7,
       "id": 12
@@ -342,6 +353,11 @@
       "userId": 5,
       "locationId": 25,
       "id": 13
+    },
+    {
+      "userId": 6,
+      "locationId": 18,
+      "id": 16
     }
   ]
 }
