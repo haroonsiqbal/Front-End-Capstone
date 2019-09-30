@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { Map, GoogleApiWrapper, Marker, InfoWindow } from 'google-maps-react';
 import MapManager from '../../modules/MapManager';
+import cupicon from './cup6.png'
 
 class MapModal extends Component {
     state = {
@@ -52,6 +53,11 @@ class MapModal extends Component {
               center={this.state.center}
             >
             <Marker onClick={this.onMarkerClick}
+              icon={{
+                url: cupicon,
+                anchor: new this.props.google.maps.Point(50, 66),
+                scaledSize: new this.props.google.maps.Size(50, 66)
+              }}
               title={this.props.shop.location.name}
               name={this.props.shop.location.name}
               position={this.state.center}
