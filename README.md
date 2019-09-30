@@ -28,7 +28,7 @@ Users also have the ability to submit comments for individual coffee shop locati
 
 ### Log Out
 
-To exit the application, click the Log Out button at the top right corner of the screen. Upon logging out, the user will be redirected to the landing page. Logging out will also clear all session storage information for the user.
+To exit the application, click the Log Out button at the top right corner of the screen. Upon logging out, the user will be redirected to the landing page. Logging out will also clear all user information that has been stored by the application during the browsing session.
 
 
 
