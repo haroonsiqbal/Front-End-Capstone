@@ -1,4 +1,4 @@
-### JAVE JUICE
+### JAVA JUICE
 
 Java Juice is an application designed to allow users to search coffee shops by the number of outlets available. The goal of the app is to help users avoid running out of battery life while working or studying on the go.
 
